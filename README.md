@@ -44,8 +44,8 @@ jupyter nbconvert --to script price_prediction_exploration.ipynb
 
 Then the following files are to be used with MLflow:
 
-*RF_optimization.py
-*RFbest_model.py
+* RF_optimization.py
+* RFbest_model.py
 
 
 The first file is about model experimentation and the second one registers the model in MLflow. Prior to running these files I needed to use the following command in CLI to start Mlflow service:
