@@ -21,7 +21,13 @@ Sample of the data:
 
 
 ## Tech stack
-.
+* Jupyter Notebook
+* Python
+* MLflow
+* Prefect
+* Evidently AI
+* Grafana
+* Docker
+* Anaconda Prompt (CLI)
 
-*.*
 ## Instructions
