@@ -31,3 +31,16 @@ Sample of the data:
 * Anaconda Prompt (CLI)
 
 ## Instructions
+All the dependencies are in the requirements file.
+
+The Jupyter Notebooks are just for data exploration and there are no relevant instructions to be given here.
+
+For the creation of the preprocessing python file I used the following command in CLI:
+jupyter nbconvert --to script price_prediction_exploration.ipynb
+
+Then the following files are to be used with MLflow:
+RF_optimization.py
+RFbest_model.py
+
+The first file is about model experimentation and the second one registers the model in MLflow. Prior to running these files I needed to use the following command in CLI to start Mlflow service:
+mlflow ui --backend-store-uri sqlite:///mlflow.db
