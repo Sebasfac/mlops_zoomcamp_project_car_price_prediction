@@ -60,6 +60,7 @@ The first file is about model experimentation and the second one registers the m
 * mlflow ui --backend-store-uri sqlite:///mlflow.db
 
 To access MLflow UI browse to http://127.0.0.1:5000
+The folder mlartifacts contains the Mlflow artifacts.
 
 ### Monitoring
 To calculate the monitoring metrics with evidently_metrics.py, it was created a docker-compose.yaml file for postgres, adminer and grafana services. A prefect server was also used. So, before running the python file I needed to start Docker Desktop and run the following commands in CLI:
@@ -69,6 +70,8 @@ To calculate the monitoring metrics with evidently_metrics.py, it was created a 
 
 To access Grafana UI browse to localhost:3000
 Grafana default login credentials are admin and admin
+
+The folder config is configuration of Grafana.
 
 The folder dashboards contain one table with calculated metrics on different subsets of the dataset.
 
