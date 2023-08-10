@@ -5,10 +5,10 @@ Short description: This is the capstone project of MLOps zoomcamp 2023 edition.
 
 
 ## Overview
-The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, model, year of production, engine type and other characteristics. The model runs locally and is not deployed on the cloud. It can take around 6 gb of disk space.
+The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, model, year of production, engine type and other characteristics. The model runs locally and is not deployed on the cloud. It can take up to 6 gb of disk space.
 Jupyter notebooks will be used for initial data exploration while later MLflow will be used for model experimentation and registration.
 
-In the end we will have a python script receiving a csv file and throwing out reasonable predictions about car prices while being orchestrated in a very basic way with Prefect. We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to throw some quality metrics based on the mentioned csv file and the model predictions.
+In the end we will have a python script receiving a csv file and throwing out reasonable predictions about car prices while being orchestrated in a very basic way with Prefect. We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to throw some metrics based on the mentioned csv file and the model predictions.
 
 ## Dataset
 The dataset has 19237 rows x 18 columns and is the following:
@@ -41,6 +41,8 @@ For the creation of the preprocessing python file I used the following command i
 
 jupyter nbconvert --to script price_prediction_exploration.ipynb
 
+The file price_prediction_preprocessing.py then produces some pickle files inside the preprocessed_data folder which will be used by the model later.
+
 
 Then the following files are to be used with MLflow:
 
@@ -64,3 +66,12 @@ To access Grafana UI browse to localhost:3000
 Grafana default login credentials are admin and admin
 
 The folder dashboards contain one table with calculated metrics on different subsets of the dataset.
+
+For the predictions there is the file car_price_predictor.py which is used with the Prefect server running.
+The folder tests contain the respective unit tests which can be run by the CLI with the following command:
+
+pytest tests/
+
+For the pylint exceptions a file pylintrc is used.
+
+The Makefile contains a run of a few quality checks too.
