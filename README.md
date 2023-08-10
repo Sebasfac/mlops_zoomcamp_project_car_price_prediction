@@ -5,7 +5,7 @@ Short description: This is the capstone project of MLOps zoomcamp 2023 edition.
 
 
 ## Overview
-The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, car model, year of production, engine type and other characteristics. The model runs locally and is not deployed on the cloud. It can take up to 6 gb of disk space.
+The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, car model, year of production, engine type and other characteristics. Needless to say, price prediction is a very important task in market economies as it allows economic agents to formulate better plans, therefore increasing resource efficiency. The model runs locally so it is not deployed on the cloud. It can take up to 6 gb of disk space.
 
 Jupyter notebooks will be used for initial data exploration while MLflow will be used for later model experimentation and registration.
 
@@ -55,7 +55,6 @@ Then the following files are to be used with MLflow:
 * RF_optimization.py
 * RFbest_model.py
 
-
 The first file is about model experimentation and the second one registers the model in MLflow. Prior to running these files I needed to use the following command in CLI to start MLflow service:
 
 mlflow ui --backend-store-uri sqlite:///mlflow.db
@@ -74,11 +73,11 @@ Grafana default login credentials are admin and admin
 The folder dashboards contain one table with calculated metrics on different subsets of the dataset.
 
 ### Predictions
-For the predictions there is the file car_price_predictor.py which is used with the Prefect server running.
+For predicting car prices there is the file car_price_predictor.py which is used with the Prefect server running.
 The folder tests contain the respective unit tests which can be run by the CLI with the following command:
 
 pytest tests/
 
-For the pylint exceptions a file pylintrc is used.
+For the pylint exceptions a file .pylintrc is used.
 
 The Makefile contains a run of a few quality checks too.
