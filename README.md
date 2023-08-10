@@ -44,7 +44,7 @@ The Jupyter Notebooks are just for data exploration and there are no relevant in
 
 For the creation of the preprocessing python file I used the following command in CLI:
 
-jupyter nbconvert --to script price_prediction_exploration.ipynb
+* jupyter nbconvert --to script price_prediction_exploration.ipynb
 
 The file price_prediction_preprocessing.py then produces some pickle files inside the preprocessed_data folder which will be used by the model later.
 
@@ -57,7 +57,7 @@ Then the following files are to be used with MLflow:
 
 The first file is about model experimentation and the second one registers the model in MLflow. Prior to running these files I needed to use the following command in CLI to start MLflow service:
 
-mlflow ui --backend-store-uri sqlite:///mlflow.db
+* mlflow ui --backend-store-uri sqlite:///mlflow.db
 
 To access MLflow UI browse to http://127.0.0.1:5000
 
@@ -76,7 +76,7 @@ The folder dashboards contain one table with calculated metrics on different sub
 For predicting car prices there is the file car_price_predictor.py which is used with the Prefect server running.
 The folder tests contain the respective unit tests which can be run by the CLI with the following command:
 
-pytest tests/
+* pytest tests/
 
 For the pylint exceptions a file .pylintrc is used.
 
