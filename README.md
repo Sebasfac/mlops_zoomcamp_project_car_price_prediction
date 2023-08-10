@@ -73,7 +73,7 @@ To access Grafana UI browse to localhost:3000
 
 Grafana default login credentials are admin and admin
 
-The folder config is configuration of Grafana.
+The folder config is the configuration of Grafana.
 
 The folder dashboards contains one table with calculated metrics on different subsets of the dataset.
 
