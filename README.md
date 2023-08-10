@@ -22,6 +22,7 @@ Sample of the data:
 
 ## Tech stack
 * Jupyter Notebook
+* VS Code
 * Python
 * MLflow
 * Prefect
