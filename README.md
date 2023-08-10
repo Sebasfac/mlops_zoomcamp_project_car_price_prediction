@@ -8,6 +8,7 @@ This is the capstone project of mlops zoomcamp 2023 edition.
 
 ## Dataset
 The dataset has 19237 rows x 18 columns and is the following:
+
 https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge
 
 Sample of the data:
