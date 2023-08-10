@@ -9,11 +9,11 @@ The objective of this project is to have a very simple machine learning operatio
 
 Jupyter notebooks will be used for initial data exploration while MLflow will be used for model experimentation and registration.
 
-We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to display a few relevant metrics based on a csv file and the model predictions.
-In the end we will have a python script receiving the mentioned csv file and outputting reasonable predictions about car prices while being orchestrated in a very basic way with Prefect.
+We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to display a few relevant metrics based on a CSV file and the model predictions.
+In the end we will have a python script receiving the mentioned CSV file and outputting reasonable predictions about car prices while being orchestrated in a very basic way with Prefect.
 
 ## Dataset
-The dataset (csv) has 19237 rows x 18 columns and comes from the following link:
+The dataset (CSV) has 19237 rows x 18 columns and comes from the following link:
 
 https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge
 
