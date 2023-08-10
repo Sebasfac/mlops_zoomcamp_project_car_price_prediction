@@ -9,7 +9,7 @@ The objective of this project is to have a very simple machine learning operatio
 
 Jupyter notebooks will be used for initial data exploration while MLflow will be used for model experimentation and registration.
 
-We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to throw some metrics based on a csv file and the model predictions.
+We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to display a few relevant metrics based on a csv file and the model predictions.
 In the end we will have a python script receiving the mentioned csv file and throwing out reasonable predictions about car prices while being orchestrated in a very basic way with Prefect.
 
 ## Dataset
