@@ -53,6 +53,8 @@ The first file is about model experimentation and the second one registers the m
 
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 
+To access MLflow UI browse to http://127.0.0.1:5000
+
 To calculate the monitoring metrics with evidently_metrics.py, it was created a docker-compose.yaml file for postgres, adminer and grafana services. A prefect server was also used. So, before running the python file I needed to start Docker Desktop and run the following commands in CLI:
 
 docker-compose up --build
