@@ -5,7 +5,7 @@ Short description: This is the capstone project of MLOps zoomcamp 2023 edition.
 
 
 ## Overview
-The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, car model, year of production, engine type and other characteristics. Needless to say, price prediction is a very important task in market economies as it allows economic agents to formulate better plans, therefore increasing resource efficiency. The model runs locally so it is not deployed on the cloud. It can take up to 6 gb of disk space.
+The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, car model, year of production, engine type and other characteristics. Needless to say, price prediction is a very important task in market economies as it allows economic agents to formulate better plans, therefore increasing resource efficiency. The model runs locally so it is not deployed on the cloud. It can take up to 6 GB of disk space.
 
 Jupyter notebooks will be used for initial data exploration while MLflow will be used for later model experimentation and registration.
 
