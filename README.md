@@ -6,6 +6,7 @@ Short description: This is the capstone project of MLOps zoomcamp 2023 edition.
 
 ## Overview
 The objective of this project is to have a very simple machine learning operations (MLOps) workflow, where we will predict car prices based on their attributes such as the manufacturer, model, year of production, engine type and other characteristics. The model runs locally and is not deployed on the cloud. It can take up to 6 gb of disk space.
+
 Jupyter notebooks will be used for initial data exploration while later MLflow will be used for model experimentation and registration.
 
 In the end we will have a python script receiving a csv file and throwing out reasonable predictions about car prices while being orchestrated in a very basic way with Prefect. We will also have a basic monitoring system with Evidently AI, Prefect, Grafana and Postgres DB to throw some metrics based on the mentioned csv file and the model predictions.
