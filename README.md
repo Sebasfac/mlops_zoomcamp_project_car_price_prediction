@@ -21,5 +21,6 @@ Sample of the data:
 
 
 ## Tech stack
-
+*.*
+*.*
 ## Instructions
