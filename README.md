@@ -75,7 +75,7 @@ Grafana default login credentials are admin and admin
 
 The folder config is configuration of Grafana.
 
-The folder dashboards contain one table with calculated metrics on different subsets of the dataset.
+The folder dashboards contains one table with calculated metrics on different subsets of the dataset.
 
 ### Predictions
 For predicting car prices there is the file car_price_predictor.py which is used with the Prefect server running.
