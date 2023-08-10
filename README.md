@@ -13,7 +13,7 @@ We will also have a basic monitoring system with Evidently AI, Prefect, Grafana 
 In the end we will have a python script receiving the mentioned csv file and throwing out reasonable predictions about car prices while being orchestrated in a very basic way with Prefect.
 
 ## Dataset
-The dataset has 19237 rows x 18 columns and comes from the following link:
+The dataset (csv) has 19237 rows x 18 columns and comes from the following link:
 
 https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge
 
